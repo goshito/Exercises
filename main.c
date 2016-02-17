@@ -1,24 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/* 
- * File:   main.c
- * Author: Georgi
- *
- * Created on 17 Февруари 2016, 10:35
- */
-
 #include <stdio.h>
-#include <stdlib.h>
-
-/*
- * 
- */
-int main(int argc, char** argv) {
-
-    return (EXIT_SUCCESS);
+// p.14 Exercise 1-5. Modify the temperature conversion program to print the table in reverse order, that is, from 300 degrees to O.
+int main() {
+    int fahr;
+    
+    for (fahr = 300; fahr >= 0; fahr -= 20) {
+        printf("%3d\t%6.1f\n", fahr, (5.0 / 9.0)*(fahr - 32));
+    }
+    return 0;
 }
-
